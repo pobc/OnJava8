@@ -1304,10 +1304,10 @@ public class AnonymousClosure {
 
 | 组合方法 | 支持接口 |
 | :----- | :----- |
-| `andThen(argument)` <br> 根据参数执行原始操作 | **Function <br> BiFunction <br> Consumer <br> BiConsumer <br> IntConsumer <br> LongConsumer <br> DoubleConsumer <br> UnaryOperator <br> IntUnaryOperator <br> LongUnaryOperator <br> DoubleUnaryOperator <br> BinaryOperator** |
-| `compose(argument)` <br> 根据参数执行原始操作 | **Function <br> UnaryOperator <br> IntUnaryOperator <br> LongUnaryOperator <br> DoubleUnaryOperator** |
-| `and(argument)`  <br> 短路**逻辑与**原始谓词和参数谓词 | **Predicate <br> BiPredicate <br> IntPredicate <br> LongPredicate <br> DoublePredicate** |
-| `or(argument)` <br> 短路**逻辑或**原始谓词和参数谓词 | **Predicate <br> BiPredicate <br> IntPredicate <br> LongPredicate <br> DoublePredicate** |
+| `andThen(argument)` <br> 执行原始操作，接着执行argument操作 | **Function <br> BiFunction <br> Consumer <br> BiConsumer <br> IntConsumer <br> LongConsumer <br> DoubleConsumer <br> UnaryOperator <br> IntUnaryOperator <br> LongUnaryOperator <br> DoubleUnaryOperator <br> BinaryOperator** |
+| `compose(argument)` <br> 先执行argument操作，再执行原始操作 | **Function <br> UnaryOperator <br> IntUnaryOperator <br> LongUnaryOperator <br> DoubleUnaryOperator** |
+| `and(argument)`  <br> 原始谓词和argument谓词的短路**逻辑与** | **Predicate <br> BiPredicate <br> IntPredicate <br> LongPredicate <br> DoublePredicate** |
+| `or(argument)` <br> 原始谓词和argument谓词的短路**逻辑或** | **Predicate <br> BiPredicate <br> IntPredicate <br> LongPredicate <br> DoublePredicate** |
 | `negate()` <br> 该谓词的**逻辑否**谓词| **Predicate <br> BiPredicate <br> IntPredicate <br> LongPredicate <br> DoublePredicate** |
 
 
